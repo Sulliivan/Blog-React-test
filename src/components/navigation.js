@@ -1,5 +1,5 @@
 import React from 'react';
-import {link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
     {
@@ -15,7 +15,7 @@ const navLinks = [
         path: '/contact-us'
     },
     {
-        title: 'login',
+        title: 'Login',
         path: '/login'
     }
 ]
@@ -27,7 +27,7 @@ export default function Navigation () {
         <ul>
             { navLinks.map((link, index)=> (
                 <li key={index}>
-                    <link to={link.path}>{link.title}</link>
+                    <Link to={link.path}>{link.title}</Link>
                 </li>
             ))
             }
